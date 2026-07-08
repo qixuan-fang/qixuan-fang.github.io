@@ -1,4 +1,4 @@
-# Qixuan Fang — Haider-style academic homepage
+# Qixuan Fang — academic homepage
 
 This is a static GitHub Pages website. It uses plain HTML and CSS only. No Jekyll, no npm, no build step.
 
