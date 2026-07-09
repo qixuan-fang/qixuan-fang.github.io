@@ -1,8 +1,0 @@
-<footer class="site-footer">
-  <div>
-    Last updated: {{ site.time | date: "%B %Y" }}.
-  </div>
-  <div class="footer-note">
-    Built with Jekyll and GitHub Pages.
-  </div>
-</footer>
