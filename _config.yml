@@ -1,24 +1,27 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{{ page.description | default: site.description }}">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-</head>
-<body>
-  <div class="site-shell">
-    {% include header.html %}
+title: "Qixuan Fang"
+description: "Qixuan Fang's personal academic website"
+url: "https://qixuan-fang.github.io"
+baseurl: ""
 
-    <main class="content" id="main-content">
-      {{ content }}
-    </main>
+markdown: "kramdown"
+permalink: "pretty"
+timezone: "America/New_York"
 
-    {% include footer.html %}
-  </div>
-</body>
-</html>
+exclude:
+  - "README.md"
+  - "Gemfile"
+  - "Gemfile.lock"
+
+author:
+  name: "Qixuan Fang"
+  chinese_name: "方啓軒 / 方启轩"
+  position: "Ph.D. Candidate in Mathematics"
+  affiliation: "Rutgers University–Newark"
+  department: "Department of Mathematics and Computer Science"
+  email: "qixuan.fang@rutgers.edu"
+  alt_email: "qixuan.fang.math@gmail.com"
+  office: "Smith Hall 236, 101 Warren Street, Newark, NJ 07102"
+  phone: "(973) 353-1004"
+  office_hours: "Wednesdays, 3:00–4:00 p.m., Spring 2026"
+
+automatic_last_updated: true
