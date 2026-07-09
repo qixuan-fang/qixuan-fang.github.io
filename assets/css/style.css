@@ -310,23 +310,33 @@ strong {
 .calligraphy-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 24px 30px;
-  margin-top: 18px;
+  gap: 20px 26px;
+  margin: 20px auto 0;
+  max-width: 780px;
 }
 
 .calligraphy-item {
   margin: 0;
+  text-align: center;
 }
 
 .calligraphy-item img {
   display: block;
-  width: 100%;
+  width: 88%;
+  max-width: 360px;
   height: auto;
+  margin: 0 auto;
+  object-fit: contain;
 }
 
 @media (max-width: 760px) {
   .calligraphy-grid {
     grid-template-columns: 1fr;
+    max-width: 420px;
+  }
+
+  .calligraphy-item img {
+    width: 100%;
   }
 }
 
