@@ -304,4 +304,30 @@ strong {
     padding: 8px 0;
     border-bottom: 1px solid var(--line);
   }
+
 }
+
+.calligraphy-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px 30px;
+  margin-top: 18px;
+}
+
+.calligraphy-item {
+  margin: 0;
+}
+
+.calligraphy-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 760px) {
+  .calligraphy-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
