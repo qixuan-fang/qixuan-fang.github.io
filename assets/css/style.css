@@ -340,4 +340,29 @@ strong {
   }
 }
 
+.section-title-with-photo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--line);
+}
+
+.section-title-with-photo h2 {
+  margin: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.section-title-photo {
+  display: block;
+  width: 34px;
+  height: 34px;
+  object-fit: cover;
+  border-radius: 7px;
+  border: 1px solid var(--green-border);
+  box-shadow: 0 1px 5px rgba(47, 95, 63, 0.14);
+  flex: 0 0 auto;
+}
 
