@@ -266,6 +266,16 @@ strong {
     margin-top: 16px;
   }
 
+    .section-title-with-photo {
+    gap: 8px;
+  }
+
+  .section-title-photo {
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+  }
+  
   .hero {
     padding: 22px 20px;
   }
