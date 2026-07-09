@@ -132,12 +132,12 @@ body {
   margin-top: 0;
 }
 
-/* Title with small profile photo */
+/* Title with profile photo */
 
 .section-title-with-photo {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
   margin: 0 0 12px;
   padding-bottom: 6px;
   border-bottom: 1px solid var(--line);
@@ -151,15 +151,15 @@ body {
 
 .section-title-photo {
   display: block;
-  width: 28px;
-  height: 28px;
-  max-width: 28px;
-  max-height: 28px;
+  width: 80px;
+  height: 80px;
+  max-width: 80px;
+  max-height: 80px;
   object-fit: cover;
-  border-radius: 6px;
+  border-radius: 10px;
   border: 1px solid var(--green-border);
   box-shadow: 0 1px 5px rgba(47, 95, 63, 0.14);
-  flex: 0 0 28px;
+  flex: 0 0 80px;
 }
 
 /* Cards and grids */
@@ -368,16 +368,16 @@ a:hover {
   }
 
   .section-title-with-photo {
-    gap: 7px;
+    gap: 10px;
   }
 
   .section-title-photo {
-    width: 24px;
-    height: 24px;
-    max-width: 24px;
-    max-height: 24px;
-    border-radius: 5px;
-    flex-basis: 24px;
+    width: 60px;
+    height: 60px;
+    max-width: 60px;
+    max-height: 60px;
+    border-radius: 8px;
+    flex-basis: 60px;
   }
 
   .calligraphy-grid {
