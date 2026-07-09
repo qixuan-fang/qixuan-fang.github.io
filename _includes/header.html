@@ -1,0 +1,17 @@
+<header class="site-header">
+  <div>
+    <a class="site-title" href="{{ '/' | relative_url }}">Qixuan Fang</a>
+    <div class="site-subtitle">
+      Ph.D. Candidate in Mathematics · Rutgers University–Newark
+    </div>
+  </div>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="{{ '/' | relative_url }}" class="{% if page.nav_key == 'about' %}active{% endif %}">About</a>
+    <a href="{{ '/research.html' | relative_url }}" class="{% if page.nav_key == 'research' %}active{% endif %}">Research</a>
+    <a href="{{ '/teaching.html' | relative_url }}" class="{% if page.nav_key == 'teaching' %}active{% endif %}">Teaching</a>
+    <a href="{{ '/seminars.html' | relative_url }}" class="{% if page.nav_key == 'seminars' %}active{% endif %}">Seminars</a>
+    <a href="{{ '/life.html' | relative_url }}" class="{% if page.nav_key == 'life' %}active{% endif %}">Life</a>
+    <a href="{{ '/contact.html' | relative_url }}" class="{% if page.nav_key == 'contact' %}active{% endif %}">Contact</a>
+  </nav>
+</header>
