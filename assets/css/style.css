@@ -151,15 +151,15 @@ body {
 
 .section-title-photo {
   display: block;
-  width: 160px;
-  height: 160px;
-  max-width: 160px;
-  max-height: 160px;
+  width: 180px;
+  height: 180px;
+  max-width: 180px;
+  max-height: 180px;
   object-fit: cover;
   border-radius: 10px;
   border: 1px solid var(--green-border);
   box-shadow: 0 1px 5px rgba(47, 95, 63, 0.14);
-  flex: 0 0 160px;
+  flex: 0 0 180px;
 }
 
 /* Cards and grids */
