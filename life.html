@@ -113,7 +113,6 @@ nav_key: life
       margin: 1.5rem auto;
       display: flex;
       flex-direction: column;
-      align-items: center;
       gap: 2rem;
     }
     .callig figure {
@@ -129,20 +128,27 @@ nav_key: life
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 2rem;
-      width: 100%;
       align-items: start;
     }
-    /* 下排：横幅上下堆叠，整体居中；width 控制横幅宽度 */
-    .callig-stack {
+    /* 下排：左右两列，每列两张横幅上下叠放 */
+    .callig-bottom {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: start;
+    }
+    .callig-col {
       display: flex;
       flex-direction: column;
       gap: 1rem;
-      width: 80%;
     }
-    /* 手机屏幕上收紧间距，横幅占满宽度 */
+    /* 手机屏幕：下排改成一列，按 靡不有初→鲜克有终→笃初诚美→慎终宜令 排 */
     @media (max-width: 600px) {
       .callig-top { gap: 1rem; }
-      .callig-stack { width: 100%; }
+      .callig-bottom {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
     }
   </style>
 
@@ -158,23 +164,27 @@ nav_key: life
       </figure>
     </div>
 
-    <div class="callig-stack">
-      <figure>
-        <img src="{{ '/assets/images/calligraphy/mi-bu-you-chu.jpg' | relative_url }}"
-             alt="靡不有初">
-      </figure>
-      <figure>
-        <img src="{{ '/assets/images/calligraphy/xian-ke-you-zhong.jpg' | relative_url }}"
-             alt="鲜克有终">
-      </figure>
-      <figure>
-        <img src="{{ '/assets/images/calligraphy/du-chu-cheng-mei.jpg' | relative_url }}"
-             alt="笃初诚美">
-      </figure>
-      <figure>
-        <img src="{{ '/assets/images/calligraphy/shen-zhong-yi-ling.jpg' | relative_url }}"
-             alt="慎终宜令">
-      </figure>
+    <div class="callig-bottom">
+      <div class="callig-col">
+        <figure>
+          <img src="{{ '/assets/images/calligraphy/mi-bu-you-chu.jpg' | relative_url }}"
+               alt="靡不有初">
+        </figure>
+        <figure>
+          <img src="{{ '/assets/images/calligraphy/xian-ke-you-zhong.jpg' | relative_url }}"
+               alt="鲜克有终">
+        </figure>
+      </div>
+      <div class="callig-col">
+        <figure>
+          <img src="{{ '/assets/images/calligraphy/du-chu-cheng-mei.jpg' | relative_url }}"
+               alt="笃初诚美">
+        </figure>
+        <figure>
+          <img src="{{ '/assets/images/calligraphy/shen-zhong-yi-ling.jpg' | relative_url }}"
+               alt="慎终宜令">
+        </figure>
+      </div>
     </div>
   </div>
 </section>
